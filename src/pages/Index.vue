@@ -35,6 +35,17 @@
           </div>
         </a>
       </div>
+      <div class="featured-work-container">
+        <a class="work-link">
+          <div class="work-link-wrapper">
+            <img class="work-link-image" src="../assets/smartbrain.png">
+            <div class="work-link-content">
+              <h3 class="link-content__header">Smartbrain Facial Recognition App</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+
     </section>
 
 
@@ -114,7 +125,7 @@ export default {
     display: flex;
     -ms-flex: 1 1 100%;
     flex: 1 1 100%;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     letter-spacing: -1px;
     font-size: 2rem;
     font-weight: 400;
@@ -127,7 +138,7 @@ export default {
     flex-flow: row wrap;
     -ms-flex: 1 1 100%;
     flex: 1 1 100%;
-    padding-bottom: 4em;
+    padding-bottom: 1em;
   }
 
   .work-link {
