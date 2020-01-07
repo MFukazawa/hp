@@ -20,7 +20,21 @@
           </a>
         </div>
       </div>
-
+    </section>
+    <section class="work">
+      <div class="container">
+        <h2 class="secondary-header">Featured Work</h2>
+      </div>
+      <div class="featured-work-container">
+        <a class="work-link">
+          <div class="work-link-wrapper">
+            <img class="work-link-image" src="../assets/mjo2.png">
+            <div class="work-link-content">
+              <h3 class="link-content__header">Miyazaki Jazz Organization</h3>
+            </div>
+          </div>
+        </a>
+      </div>
     </section>
 
 
@@ -41,6 +55,7 @@ export default {
 </script>
 
 <style scoped>
+  /* Hero */
   .container {
     display: flex;
     flex-flow: row wrap;
@@ -88,6 +103,70 @@ export default {
     font-size: 1.5rem;
     font-weight: 400;
     font-size: 1rem;
+  }
+
+  /* Work */
+  .work {
+    margin-top: 3em;
+  }
+
+  .secondary-header {
+    display: flex;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    margin-bottom: .5em;
+    letter-spacing: -1px;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .featured-work-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    padding-bottom: 4em;
+  }
+
+  .work-link {
+    flex: 1 1 100%;
+    display: inline-block;
+    padding: 15px;
+  }
+
+  .work-link-wrapper {
+    transition: all .2s ease;
+    transform: translateY(0);
+    background: transparent;
+    box-shadow: 0 0 0 rgba(93,93,93,0)
+  }
+
+  .work-link-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .work-link-content {
+    position: relative;
+    z-index: 10;
+    border-radius: 4px;
+    background: #fff;
+    padding: 15px;
+  }
+
+  .link-content__header {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    color: #5d5d5d;
+    letter-spacing: 0;
+    line-height: 1.2;
+    font-size: 1.3rem;
+    font-weight: 400;
+    transition: color .3s ease;
   }
 
 
