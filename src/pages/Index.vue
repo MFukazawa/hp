@@ -23,18 +23,11 @@
 
     </section>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
 
-    <div class="logo">
-      MF
-    </div>
-
-    <p class="home-links">
+    <!-- <p class="home-links">
       <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
       <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
+    </p> -->
 
   </Layout>
 </template>
@@ -48,6 +41,16 @@ export default {
 </script>
 
 <style scoped>
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    align-items: center;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .hero__title {
     position: relative;
     max-width: 840px;
@@ -70,6 +73,12 @@ export default {
 
   .hero__employer-img {
     margin-left: 5px;
+    transition: all .2s ease-in-out;
+  }
+
+  .hero__employer-img:hover {
+    transform: translateY(-2px);
+    opacity: .9;
   }
 
   .employer__label {

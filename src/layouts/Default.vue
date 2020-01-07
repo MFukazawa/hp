@@ -58,7 +58,7 @@ query {
   .container {
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
+    width: 90%;
     align-items: center;
     max-width: 1400px;
     margin-left: auto;
@@ -83,16 +83,21 @@ query {
     margin: 0;
     padding: 0;
     text-align: right;
-    height: 120px;
+    height: 110px;
+    padding-top: 10px;
   }
 
   .nav__list-item {
     text-decoration: none;
     display: inline-block;
-    padding: .5em 1em;
+    padding: .3em 1em;
     letter-spacing: .5px;
     font-size: .8em;
     transition: color .25s ease;
+  }
+
+  .nav__list-item:hover {
+    color: cornflowerblue;
   }
 
   @media screen and (max-width: 360px) {
