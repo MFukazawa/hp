@@ -15,6 +15,31 @@
       </div>
     </nav>
     <slot/>
+    <footer class="footer">
+      <div class="container">
+        <h2 class="secondary-header">Starting a project?</h2>
+        <a class="footer__link" href="https://forms.gle/EQxHCGsdg9buMBm26">Let's talk.</a>
+      </div>
+      <div class="container">
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a href="https://github.com/MFukazawa" target="_blank">
+              Github
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="https://www.linkedin.com/in/micah-fukazawa-99735a52/" target="_blank">
+              Linkedin
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="https://forms.gle/EQxHCGsdg9buMBm26">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -41,6 +66,7 @@ query {
     color: inherit;
     outline: none;
       -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
   }
 
   .layout {
@@ -97,6 +123,53 @@ query {
   }
 
   .nav__list-item:hover {
+    color: cornflowerblue;
+  }
+
+  /* footer */
+  .footer {
+    padding: 4em 0 6em;
+  }
+
+  .secondary-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    margin-bottom: .5em;
+    letter-spacing: -1px;
+    font-size: 2rem;
+    font-weight: 400;  
+  }
+
+  .footer__link {
+    display: block;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: 300;
+    color: cornflowerblue;
+    transition: color .25s ease;
+  }
+
+  .footer__link:hover {
+    color: #5d5d5d;
+  }
+
+  .social-list {
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+  }
+
+  .social-list__item {
+    display: block;
+    margin: 2em 0;
+    list-style: none;
+    transition: color .25s ease;
+    cursor: pointer;
+  }
+
+  .social-list__item:hover {
     color: cornflowerblue;
   }
 

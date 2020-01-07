@@ -98,8 +98,9 @@ export default {
   }
 
   .hero__employer-img {
-    margin-left: 5px;
+    margin: 5px 0 0 5px;
     transition: all .2s ease-in-out;
+
   }
 
   .hero__employer-img:hover {
