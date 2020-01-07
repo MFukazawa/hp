@@ -181,6 +181,20 @@ export default {
     transition: color .3s ease;
   }
 
+  @media screen and (min-width: 768px) {
+    .hero__title {
+      font-size: 3rem;
+    }
+
+    .secondary-header {
+      font-size: 2.5rem;
+    }
+
+    .link-content__header {
+      font-size: 2rem;
+    }
+  }
+
 
 </style>
 

@@ -17,7 +17,7 @@
     <slot/>
     <footer class="footer">
       <div class="container">
-        <h2 class="secondary-header">Starting a project?</h2>
+        <h2 class="footer__header">Starting a project?</h2>
         <a class="footer__link" href="https://forms.gle/EQxHCGsdg9buMBm26">Let's talk.</a>
       </div>
       <div class="container">
@@ -97,6 +97,10 @@ query {
     height: 120px;
   }
 
+  .nav__logo img {
+    max-width: 150px;
+  }
+
   .nav__logo-link {
     margin-top: 10px;
     display: flex;
@@ -131,11 +135,11 @@ query {
     padding: 4em 0 6em;
   }
 
-  .secondary-header {
+  .footer__header {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
     margin-bottom: .5em;
     letter-spacing: -1px;
     font-size: 2rem;
@@ -173,10 +177,33 @@ query {
     color: cornflowerblue;
   }
 
-  @media screen and (max-width: 360px) {
-    .nav__logo img {
-      max-width: 150px;
+  @media screen and (min-width: 768px) {
+    .nav__list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
     }
+
+    .footer__header {
+      flex: 0 0 auto;
+      margin-bottom: 0;
+      margin-block-start: 0;
+      font-size: 3rem;
+    }
+
+    .footer__link {
+      display: inline-block;
+      padding: 0;
+      font-size: 3rem;
+      margin-left: 15px;
+      font-weight: 500;
+    }
+
+    .social-list__item {
+      display: inline-block;
+      margin: 40px 40px 0 0;
+    }
+
   }
 
 </style>
