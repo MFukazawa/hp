@@ -34,8 +34,6 @@
             </div>
           </div>
         </a>
-      </div>
-      <div class="featured-work-container">
         <a class="work-link">
           <div class="work-link-wrapper">
             <img class="work-link-image" src="../assets/smartbrain.png">
@@ -192,6 +190,54 @@ export default {
 
     .link-content__header {
       font-size: 2rem;
+    }
+
+    .featured-work-container {
+      padding: 0 15px 2em 15px;
+      justify-content: center;
+    }
+
+    .work-link {
+      flex: 0 0 45%;
+    }
+
+    .work-link-image {
+      max-height: 146px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .work-link-image {
+      max-height: 197px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .work-link {
+      flex: 0 0 47%;
+    }
+    .work-link-image {
+      max-height: none;
+    }
+  }
+
+  @media screen and (min-width: 2560px) {
+    .secondary-header {
+      font-size: 2em;
+    }
+
+    .work-link {
+      flex: 0 0 48%
+    }
+
+    .work-link-image {
+      max-height: 501px;
+      max-width: none;
+      margin: 0 auto;
+    }
+
+    .link-content__header {
+      font-size: 2em;
     }
   }
 
