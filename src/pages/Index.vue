@@ -58,7 +58,8 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Micah Fukazawa | Developer',
+    titleTemplate: '%s'
   }
 }
 </script>
@@ -181,7 +182,7 @@ export default {
 
   @media screen and (min-width: 768px) {
     .hero__title {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
 
     .secondary-header {
