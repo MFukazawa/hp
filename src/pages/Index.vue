@@ -154,6 +154,13 @@ export default {
     box-shadow: 0 0 0 rgba(93,93,93,0)
   }
 
+  .work-link-wrapper:hover {
+    transform: translateY(-2px);
+    opacity: .9;
+    box-shadow: 0 8px 14px rgba(93,93,93,.1)
+  }
+
+
   .work-link-image {
     display: block;
     width: 100%;
