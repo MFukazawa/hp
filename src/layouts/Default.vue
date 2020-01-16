@@ -99,13 +99,20 @@ query {
 
   .nav__logo img {
     max-width: 150px;
+    transition: all .2s ease-in-out;
   }
 
   .nav__logo-link {
     margin-top: 10px;
+    width: 150px;
     display: flex;
     align-content: center;
     align-items: center;
+  }
+
+  .nav__logo-link img:hover {
+    transform: translateY(-3px);
+    opacity: .9;
   }
 
   .nav__list {
