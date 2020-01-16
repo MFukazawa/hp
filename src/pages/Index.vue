@@ -26,7 +26,7 @@
         <h2 class="secondary-header">Featured Work</h2>
       </div>
       <div class="featured-work-container">
-        <a class="work-link">
+        <a class="work-link" href="/mjo">
           <div class="work-link-wrapper">
             <img class="work-link-image" src="../assets/mjo2.png">
             <div class="work-link-content">
@@ -145,16 +145,14 @@ export default {
     flex: 1 1 100%;
     display: inline-block;
     padding: 15px;
-  }
-
-  .work-link-wrapper {
     transition: all .2s ease;
     transform: translateY(0);
     background: transparent;
     box-shadow: 0 0 0 rgba(93,93,93,0)
+
   }
 
-  .work-link-wrapper:hover {
+  .work-link:hover {
     transform: translateY(-2px);
     opacity: .9;
     box-shadow: 0 8px 14px rgba(93,93,93,.1)
