@@ -1,19 +1,46 @@
 <template>
-  <div class="layout">
-    <nav class="nav">
-      <div class="container">
-        <div class="nav__logo">
-          <g-link class="nav__logo-link" to="/">
-            <img class="nav__img" src="../assets/logo.jpg">
-          </g-link>
+  <div class="antialiasted leading-normal flex flex-col min-h-screen">
+    <header class="border-t-4 border-black w-full bg-white">
+      <nav class="p-4 mx-auto flex flex-wrap justify-between items-center">
+        <div>
+          <a href="/">
+            <div
+              class="h-12 w-12 rounded bg-black font-bold text-white flex items-center justify-center tracking-wide text-lg hover:text-black hover:bg-white hover:border-black transition ease-in-out duration-700"
+            >
+              MSF
+            </div>
+          </a>
         </div>
-        <div class="nav__list">
-          <g-link class="nav__list-item" to="/about">About</g-link>
-          <g-link class="nav__list-item" to="/work/">Work</g-link>
-          <g-link class="nav__list-item" to="/contact/">Contact</g-link>
-        </div>
-      </div>
-    </nav>
+        <ul class="flex items-center mt-8 lg:mt-0">
+          <li class="mr-8 mb-6 lg:mb-0">
+            <g-link class="nav__list-item" to="/about">About</g-link>
+          </li>
+          <li class="mr-8 mb-6 lg:mb-0">
+            <g-link class="nav__list-item" to="/work">Work</g-link>
+          </li>
+          <li class="mr-8 mb-6 lg:mb-0">
+            <g-link class="nav__list-item" to="/contact">Contact</g-link>
+          </li>
+          <li class="mr-8 mb-6 lg:mb-0">
+            <g-link class="nav__list-item" to="/blog">Blog</g-link>
+          </li>
+        </ul>
+
+        <!-- <div class="container">
+          <div class="nav__logo">
+            <g-link class="nav__logo-link" to="/">
+
+            </g-link>
+          </div>
+          <div class="nav__list">
+            <g-link class="nav__list-item" to="/about">About</g-link>
+            <g-link class="nav__list-item" to="/work">Work</g-link>
+            <g-link class="nav__list-item" to="/contact">Contact</g-link>
+            <g-link class="nav__list-item" to="/blog">Blog</g-link>
+          </div>
+        </div> -->
+      </nav>
+    </header>
     <slot/>
     <footer class="footer">
       <div class="container">
@@ -52,7 +79,7 @@ query {
 </static-query>
 
 <style>
-  body {
+  /* body {
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     margin:0;
     padding:0;
@@ -137,7 +164,7 @@ query {
     color: cornflowerblue;
   }
 
-  /* footer */
+
   .footer {
     padding: 4em 0 6em;
   }
@@ -211,7 +238,6 @@ query {
       display: inline-block;
       margin: 40px 40px 0 0;
     }
-
-  }
+  } */
 
 </style>
