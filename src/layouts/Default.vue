@@ -13,16 +13,16 @@
         </div>
         <ul class="flex items-center mt-8 lg:mt-0">
           <li class="mr-8 mb-6 lg:mb-0">
-            <g-link class="nav__list-item" to="/about">About</g-link>
+            <g-link class="transition-all duration-500 ease-in-out transform hover:opacity-50" to="/about">About</g-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <g-link class="nav__list-item" to="/work">Work</g-link>
+            <g-link class="transition-all duration-500 ease-in-out transform hover:opacity-50" to="/work">Work</g-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <g-link class="nav__list-item" to="/contact">Contact</g-link>
+            <g-link class="transition-all duration-500 ease-in-out transform hover:opacity-50" to="/contact">Contact</g-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <g-link class="nav__list-item" to="/blog">Blog</g-link>
+            <g-link class="transition-all duration-500 ease-in-out transform hover:opacity-50" to="/blog">Blog</g-link>
           </li>
         </ul>
       </nav>
@@ -38,6 +38,11 @@
       </div>
       <div class="p-2 mx-auto">
         <ul class="flex justify-center items-center p-4">
+          <li class="mx-4 text-2xl">
+            <a href="https://gitlab.com/MFukazawa" target="_blank">
+              <font-awesome :icon="['fab', 'gitlab']" />
+            </a>
+          </li>
           <li class="mx-4 text-2xl">
             <a href="https://github.com/MFukazawa" target="_blank">
               <font-awesome :icon="['fab', 'github']" />
