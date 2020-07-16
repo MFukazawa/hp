@@ -25,46 +25,36 @@
             <g-link class="nav__list-item" to="/blog">Blog</g-link>
           </li>
         </ul>
-
-        <!-- <div class="container">
-          <div class="nav__logo">
-            <g-link class="nav__logo-link" to="/">
-
-            </g-link>
-          </div>
-          <div class="nav__list">
-            <g-link class="nav__list-item" to="/about">About</g-link>
-            <g-link class="nav__list-item" to="/work">Work</g-link>
-            <g-link class="nav__list-item" to="/contact">Contact</g-link>
-            <g-link class="nav__list-item" to="/blog">Blog</g-link>
-          </div>
-        </div> -->
       </nav>
     </header>
+
     <slot/>
-    <footer class="footer">
-      <div class="container">
-        <h2 class="footer__header">Starting a project?</h2>
-        <a class="footer__link" href="https://forms.gle/EQxHCGsdg9buMBm26">Let's talk.</a>
+
+    <footer class="border-b-4 border-black w-full bg-white">
+      <div class="p-2 mx-auto flex flex-wrap justify-center items-center">
+        <a href="https://forms.gle/EQxHCGsdg9buMBm26" class="font-bold text-4xl tracking-wide">
+          Let's talk.
+        </a>
       </div>
-      <div class="container">
-        <ul class="social-list">
-          <li class="social-list__item">
+      <div class="p-2 mx-auto">
+        <ul class="flex justify-center items-center p-4">
+          <li class="mx-4 text-2xl">
             <a href="https://github.com/MFukazawa" target="_blank">
-              Github
+              <font-awesome :icon="['fab', 'github']" />
             </a>
           </li>
-          <li class="social-list__item">
+          <li class="mx-4 text-2xl">
             <a href="https://www.linkedin.com/in/micah-fukazawa-99735a52/" target="_blank">
-              Linkedin
+              <font-awesome :icon="['fab', 'linkedin']" />
             </a>
           </li>
-          <li class="social-list__item">
-            <a href="https://forms.gle/EQxHCGsdg9buMBm26">
-              Contact
+          <li class="mx-4 text-2xl">
+            <a href="https://www.twitter.com/MicahFukazawa">
+              <font-awesome :icon="['fab', 'twitter']" />
             </a>
           </li>
         </ul>
+        <div class="text-center text-xs">Copyright Micah Fukazawa © 2020</div>
       </div>
     </footer>
   </div>
