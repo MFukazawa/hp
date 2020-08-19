@@ -109,6 +109,19 @@ query {
 
   html {
     font-family: 'Kongtext';
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 16px
+    }
   }
   /* body {
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
