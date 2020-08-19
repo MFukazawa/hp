@@ -101,6 +101,15 @@ query {
 </static-query>
 
 <style>
+  @font-face {
+    font-family: 'Kongtext';
+    src: url('../fonts/kongtext.ttf');
+    font-weight: normal;
+  }
+
+  html {
+    font-family: 'Kongtext';
+  }
   /* body {
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     margin:0;
