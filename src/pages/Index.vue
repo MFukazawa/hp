@@ -2,14 +2,12 @@
   <Layout>
     <section class="hero">
       <div class="container">
-        <h1 class="hero__title">
+        <h1 class="hero__title text-2xl">
           I'm Micah Fukazawa, a
           <a href="https://github.com/MFukazawa/" target="_blank" class="hero__link">
             front-end developer
           </a> 
-          living in Miyazaki, Japan, currently working for
-          <a href="https://nomadori.com/" target="_blank">Nomadori</a>
-          .
+          living in Miyazaki, Japan.
         </h1>
       </div>
       <div class="container">
@@ -76,7 +74,7 @@ export default {
     margin-bottom: 1.5em;
     letter-spacing: -1px;
     line-height: 1.8;
-    font-size: 2rem;
+    /* font-size: 1.7rem; */
     font-weight: 400;
   }
 
@@ -92,7 +90,7 @@ export default {
   .hero__employer-img {
     margin: 5px 0 0 5px;
     transition: all .2s ease-in-out;
-    width: 20vw;
+    width: 40vw;
     height: auto;
   }
 
@@ -190,6 +188,10 @@ export default {
 
     .link-content__header {
       font-size: 2rem;
+    }
+
+    .hero__employer-img {
+      width: 20vw;
     }
 
     .featured-work-container {

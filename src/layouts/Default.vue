@@ -5,7 +5,8 @@
         <div>
           <a href="/">
             <div
-              class="h-12 w-12 rounded bg-black font-bold text-white flex items-center justify-center tracking-wide text-lg hover:text-black hover:bg-white hover:border-black transition ease-in-out duration-700"
+              id="logo"
+              class="h-16 w-16 rounded bg-black font-bold text-white flex items-center justify-center tracking-wide hover:text-black hover:bg-white hover:border-black transition ease-in-out duration-700"
             >
               MSF
             </div>
@@ -107,8 +108,15 @@ query {
     font-weight: normal;
   }
 
+  @font-face {
+    font-family: 'Lunch DS';
+    src: url('../fonts/lunchds.ttf');
+    font-weight: normal;
+  }
+
   html {
     font-family: 'Kongtext';
+    /* font-family: 'Lunch DS'; */
     font-size: 12px;
   }
 
@@ -122,6 +130,14 @@ query {
     html {
       font-size: 16px
     }
+  }
+
+  #logo {
+    background-color: #04009d;
+  }
+
+  #logo:hover {
+    background-color: #fff;
   }
   /* body {
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
