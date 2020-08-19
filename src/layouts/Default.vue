@@ -13,26 +13,50 @@
         </div>
         <ul class="flex items-center mt-8 lg:mt-0">
           <li class="mr-8 mb-6 lg:mb-0">
-            <g-link class="transition-all duration-500 ease-in-out transform hover:opacity-50" to="/about">About</g-link>
+            <g-link
+              class="transition-all duration-500 ease-in-out transform hover:opacity-50"
+              to="/about"
+            >
+              About
+            </g-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <g-link class="transition-all duration-500 ease-in-out transform hover:opacity-50" to="/work">Work</g-link>
+            <g-link
+              class="transition-all duration-500 ease-in-out transform hover:opacity-50"
+              to="/work"
+            >
+              Work
+            </g-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <g-link class="transition-all duration-500 ease-in-out transform hover:opacity-50" to="/contact">Contact</g-link>
+            <g-link
+              class="transition-all duration-500 ease-in-out transform hover:opacity-50"
+              to="/contact"
+            >
+              Contact
+            </g-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <g-link class="transition-all duration-500 ease-in-out transform hover:opacity-50" to="/blog">Blog</g-link>
+            <g-link
+              class="transition-all duration-500 ease-in-out transform hover:opacity-50"
+              to="/blog"
+            >
+              Blog
+            </g-link>
           </li>
         </ul>
       </nav>
     </header>
 
-    <slot/>
+    <slot />
 
     <footer class="border-b-4 border-black w-full bg-white">
       <div class="p-2 mx-auto flex flex-wrap justify-center items-center">
-        <a href="https://forms.gle/EQxHCGsdg9buMBm26" class="font-bold text-4xl tracking-wide">
+        <a
+          target="_blank"
+          href="https://forms.gle/EQxHCGsdg9buMBm26"
+          class="font-bold text-4xl tracking-wide"
+        >
           Let's talk.
         </a>
       </div>
@@ -49,7 +73,10 @@
             </a>
           </li>
           <li class="mx-4 text-2xl">
-            <a href="https://www.linkedin.com/in/micah-fukazawa-99735a52/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/micah-fukazawa-99735a52/"
+              target="_blank"
+            >
               <font-awesome :icon="['fab', 'linkedin']" />
             </a>
           </li>
@@ -234,5 +261,4 @@ query {
       margin: 40px 40px 0 0;
     }
   } */
-
 </style>
