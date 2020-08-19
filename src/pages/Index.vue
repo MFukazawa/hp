@@ -16,7 +16,7 @@
         <div class="hero__employer">
           <h3 class="employer__label">Currently:</h3>
           <a target="_blank" href="https://nomadori.com/">
-            <g-image class="hero__employer-img" src="~/assets/nomadori_logo.png"></g-image>
+            <g-image class="hero__employer-img" src="~/assets/nomadori_B.png"></g-image>
           </a>
         </div>
       </div>
@@ -92,7 +92,8 @@ export default {
   .hero__employer-img {
     margin: 5px 0 0 5px;
     transition: all .2s ease-in-out;
-
+    width: 20vw;
+    height: auto;
   }
 
   .hero__employer-img:hover {
