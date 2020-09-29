@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "@gridsome/source-contentful": "^0.5.3",
-    "gridsome": "^0.7.19",
-    "markdown-it": "^11.0.0",
+    "gridsome": "^0.7.20",
+    "markdown-it": "^11.0.1",
     "typeface-cooper-hewitt": "0.0.44"
   },
   "devDependencies": {

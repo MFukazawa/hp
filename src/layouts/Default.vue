@@ -1,6 +1,6 @@
 <template>
-  <div class="antialiasted leading-normal flex flex-col min-h-screen">
-    <header class="border-t-4 border-black w-full bg-white">
+  <div class="antialiased leading-normal flex flex-col min-h-screen">
+    <header class="w-full fixed">
       <nav class="p-4 mx-auto flex flex-wrap justify-between items-center">
         <div>
           <a href="/">
@@ -115,20 +115,36 @@ query {
   }
 
   html {
-    font-family: 'Kongtext';
+    /* font-family: 'Kongtext'; */
     /* font-family: 'Lunch DS'; */
-    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: calc(12px + 6 * ((100vw - 320px) / 680));
   }
 
-  @media screen and (min-width: 320px) {
-    html {
-      font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+  .container {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 768px
     }
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 1024px) {
     html {
       font-size: 16px
+    }
+
+    .container {
+      max-width: 1024px
+    }
+  }
+
+
+  @media screen and (min-width: 1280px) {
+    .container {
+      max-width: 1280px
     }
   }
 
