@@ -5,38 +5,37 @@
         <div class="px-4 py-12 mx-auto">
           <flip-card>
             <template v-slot:front>
-              <h1 class="text-6xl font-extrabold">Micah</h1>
+              <h1 class="title">Micah</h1>
             </template>
             <template v-slot:back>
-              <h1 class="text-6xl font-extrabold">マイカ</h1>
+              <h1 class="title">マイカ</h1>
             </template>
           </flip-card>
           <flip-card>
             <template v-slot:front>
-              <h1 class="text-6xl font-extrabold">Fukazawa</h1>
+              <h1 class="title">Fukazawa</h1>
             </template>
             <template v-slot:back>
-              <h1 class="text-6xl font-extrabold">深澤</h1>
+              <h1 class="title">深澤</h1>
             </template>
           </flip-card>
           <flip-card>
             <template v-slot:front>
-              <h2 class="text-2xl font-extrabold">Frontend Developer</h2>
+              <h2 class="subtitle">Frontend Developer</h2>
             </template>
             <template v-slot:back>
-              <h2 class="text-2xl font-extrabold">
+              <h2 class="subtitle">
                 フロントエンドディベロッパー
               </h2>
             </template>
           </flip-card>
-          <p class="text-lg mb-6">
-            Transform your designs into beautiful web apps
-          </p>
-          <div class="flex items-center justify-center">
-            <button class="px-8 py-3 rounded bg-red-400 text-white">
-              Contact
-            </button>
-          </div>
+          <ul class="text-lg text-center mb-6">
+            <li>Cross-culture 🇺🇸🇯🇵</li>
+            <li>
+              Remote Work 🏡 
+            </li>
+            <li>Dad life 👨‍👩‍👦‍👦</li>
+          </ul>
         </div>
       </div>
     </base-container>
@@ -60,11 +59,12 @@ export default {
 </script>
 
 <style scoped>
-/* .main {
-  background-image: url('../assets/triangle.png');
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-} */
+  .title {
+    @apply text-6xl cursor-default font-extrabold
+  }
+
+  .subtitle {
+    @apply text-2xl cursor-default font-extrabold
+  }
 </style>
 
