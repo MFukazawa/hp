@@ -1,70 +1,22 @@
 <template>
   <Layout>
-    <base-container>
-      <div id="main" class="flex-grow">
-        <div class="px-4 py-12 mx-auto">
-          <flip-card>
-            <template v-slot:front>
-              <h1 class="title">Micah</h1>
-            </template>
-            <template v-slot:back>
-              <h1 class="title">マイカ</h1>
-            </template>
-          </flip-card>
-          <flip-card>
-            <template v-slot:front>
-              <h1 class="title">Fukazawa</h1>
-            </template>
-            <template v-slot:back>
-              <h1 class="title">深澤</h1>
-            </template>
-          </flip-card>
-          <flip-card>
-            <template v-slot:front>
-              <h2 class="subtitle">Frontend Developer</h2>
-            </template>
-            <template v-slot:back>
-              <h2 class="subtitle">
-                フロントエンドディベロッパー
-              </h2>
-            </template>
-          </flip-card>
-          <ul class="text-lg text-center mb-6">
-            <li>Cross-culture 🇺🇸🇯🇵</li>
-            <li>
-              Remote Work 🏡 
-            </li>
-            <li>Dad life 👨‍👩‍👦‍👦</li>
-          </ul>
-        </div>
-      </div>
-    </base-container>
+    <top-section />
+    <about-section />
   </Layout>
 </template>
 
 <script>
-import BaseContainer from "~/components/containers/BaseContainer";
-import FlipCard from "~/components/FlipCard";
+  import TopSection from '~/components/sections/TopSection';
+  import AboutSection from '~/components/sections/AboutSection';
 
-export default {
-  metaInfo: {
-    title: "Micah Fukazawa | Front End Developer",
-    titleTemplate: "%s",
-  },
-  components: {
-    BaseContainer,
-    FlipCard,
-  },
-};
+  export default {
+    metaInfo: {
+      title: 'Micah Fukazawa | Front End Developer',
+      titleTemplate: '%s',
+    },
+    components: {
+      TopSection,
+      AboutSection
+    },
+  };
 </script>
-
-<style scoped>
-  .title {
-    @apply text-6xl cursor-default font-extrabold
-  }
-
-  .subtitle {
-    @apply text-2xl cursor-default font-extrabold
-  }
-</style>
-

@@ -116,6 +116,7 @@ query {
 
   html {
     /* font-family: 'Kongtext'; */
+
     /* font-family: 'Lunch DS'; */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: calc(12px + 6 * ((100vw - 320px) / 680));
@@ -141,7 +142,6 @@ query {
     }
   }
 
-
   @media screen and (min-width: 1280px) {
     .container {
       max-width: 1280px
@@ -155,6 +155,7 @@ query {
   #logo:hover {
     background-color: #fff;
   }
+
   /* body {
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     margin:0;
@@ -240,7 +241,6 @@ query {
     color: cornflowerblue;
   }
 
-
   .footer {
     padding: 4em 0 6em;
   }
@@ -253,7 +253,7 @@ query {
     margin-bottom: .5em;
     letter-spacing: -1px;
     font-size: 2rem;
-    font-weight: 400;  
+    font-weight: 400;
   }
 
   .footer__link {

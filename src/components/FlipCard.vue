@@ -1,5 +1,5 @@
 <template>
-  <div class="flip w-full h-24">
+  <div class="flip h-24">
     <div class="flip-inner">
       <div class="flip-front">
         <slot name="front"></slot>
