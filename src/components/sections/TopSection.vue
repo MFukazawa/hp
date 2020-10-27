@@ -1,7 +1,7 @@
 <template>
   <base-container>
     <main>
-      <section class="w-1/2 py-12 mx-auto">
+      <section class="contents">
         <flip-card>
           <template v-slot:front>
             <h1 class="title">Micah</h1>
