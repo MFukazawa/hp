@@ -3,21 +3,44 @@
     <base-container>
       <div class="contents">
         <h2 class="text-4xl font-bold my-8">About</h2>
-        <p>
-          Hi, I'm Micah.  I work remotely as a Frontend Developer at Nomadori in Miyazaki, Japan.
-          I was born and raised in the USA.
-          I've built
-          <a href="https://www.miyazakijazz.org">Miyazaki Jazz Organization</a> and
-          <a href="https://www.nomadori.com">Nomadori</a>,
-          along with a number of private projects.
+        <p class="text-xl">
+          Hi, I'm Micah. I work remotely as a Frontend Developer at Nomadori in
+          Miyazaki, Japan. I was born and raised in the USA. I've built
+          <a
+            class="text-blue-500 underline hover:text-blue-800"
+            href="https://www.miyazakijazz.org"
+            >Miyazaki Jazz Organization</a
+          >
+          and
+          <a
+            class="text-blue-500 underline hover:text-blue-800"
+            href="https://www.nomadori.com"
+            >Nomadori</a
+          >, along with a number of private projects.
         </p>
 
-        <ul>
+        <ul class="text-xl mt-5">
           <label>Some of my favorite tools:</label>
-          <li class="list-disc list-inside pl-4">Nuxt.js</li>
-          <li class="list-disc list-inside pl-4">Vue.js</li>
-          <li class="list-disc list-inside pl-4">JavaScript</li>
-          <li class="list-disc list-inside pl-4">TailwindCSS</li>
+          <li class="list-inside pl-4">
+            <span class="text-sm mr-4"
+              ><font-awesome :icon="['fas', 'terminal']" /></span
+            >Nuxt.js
+          </li>
+          <li class="list-inside pl-4">
+            <span class="text-sm mr-4"
+              ><font-awesome :icon="['fas', 'terminal']" /></span
+            >Vue.js
+          </li>
+          <li class="list-inside pl-4">
+            <span class="text-sm mr-4"
+              ><font-awesome :icon="['fas', 'terminal']" /></span
+            >ES6
+          </li>
+          <li class="list-inside pl-4">
+            <span class="text-sm mr-4"
+              ><font-awesome :icon="['fas', 'terminal']" /></span
+            >TailwindCSS
+          </li>
         </ul>
       </div>
     </base-container>
@@ -25,11 +48,11 @@
 </template>
 
 <script>
-import BaseContainer from '~/components/containers/BaseContainer';
+  import BaseContainer from '~/components/containers/BaseContainer';
 
-export default {
-  components: {
-    BaseContainer
-  }
-}
+  export default {
+    components: {
+      BaseContainer,
+    },
+  };
 </script>
