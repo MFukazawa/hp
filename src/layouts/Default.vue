@@ -6,7 +6,6 @@
           <a href="/">
             <div
               id="logo"
-              class="h-16 w-16 rounded font-bold text-white flex items-center justify-center tracking-wide transition ease-in-out duration-1000"
             >
               MSF
             </div>
@@ -158,6 +157,9 @@ query {
   }
 
   #logo {
+    @apply h-16 w-16 rounded font-bold flex items-center justify-center tracking-wide transition ease-in-out duration-1000;
+
+    color: goldenrod;
     background-color: #000;
   }
 

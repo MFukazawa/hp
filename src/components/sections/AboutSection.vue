@@ -1,19 +1,19 @@
 <template>
-  <section id="about" class="h-screen bg-green-200">
+  <section id="about" class="h-screen">
     <base-container>
-      <div class="contents">
-        <h2 class="text-4xl font-bold my-8">About</h2>
-        <p class="text-xl">
+      <div class="contents leading-loose">
+        <h2 class="text-5xl font-bold my-8">About</h2>
+        <p class="text-xl ">
           Hi, I'm Micah. I work remotely as a Frontend Developer at Nomadori in
-          Miyazaki, Japan. I was born and raised in the USA. I've built
+          Miyazaki, Japan. I speak English and Japanese. I've built
           <a
-            class="text-blue-500 underline hover:text-blue-800"
+            class="text-yellow-600 underline hover:text-yellow-800"
             href="https://www.miyazakijazz.org"
             >Miyazaki Jazz Organization</a
           >
           and
           <a
-            class="text-blue-500 underline hover:text-blue-800"
+            class="text-yellow-600 underline hover:text-yellow-800"
             href="https://www.nomadori.com"
             >Nomadori</a
           >, along with a number of private projects.

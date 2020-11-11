@@ -19,7 +19,7 @@
               <h1 class="title">深澤</h1>
             </template>
           </flip-card>
-          <flip-card class="mt-4">
+          <flip-card class="mt-10">
             <template v-slot:front>
               <h2 class="subtitle">Frontend Developer</h2>
             </template>
@@ -67,6 +67,6 @@ export default {
 }
 
 .subtitle {
-  @apply text-2xl cursor-default font-extrabold;
+  @apply text-3xl cursor-default font-extrabold text-gray-100;
 }
 </style>
