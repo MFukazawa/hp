@@ -6,7 +6,7 @@
           <a href="/">
             <div
               id="logo"
-              class="h-16 w-16 rounded bg-black font-bold text-white flex items-center justify-center tracking-wide hover:text-black hover:bg-white hover:border-black transition ease-in-out duration-700"
+              class="h-16 w-16 rounded font-bold text-white flex items-center justify-center tracking-wide transition ease-in-out duration-1000"
             >
               MSF
             </div>
@@ -15,7 +15,7 @@
         <ul class="flex items-center mt-8 lg:mt-0">
           <li class="mr-8 mb-6 lg:mb-0">
             <g-link
-              class="transition-all duration-500 ease-in-out transform hover:opacity-50"
+              class="slider"
               to="/about"
             >
               About
@@ -23,7 +23,7 @@
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
             <g-link
-              class="transition-all duration-500 ease-in-out transform hover:opacity-50"
+              class="slider"
               to="/work"
             >
               Work
@@ -31,7 +31,7 @@
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
             <g-link
-              class="transition-all duration-500 ease-in-out transform hover:opacity-50"
+              class="slider"
               to="/contact"
             >
               Contact
@@ -39,7 +39,7 @@
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
             <g-link
-              class="transition-all duration-500 ease-in-out transform hover:opacity-50"
+              class="slider"
               to="/blog"
             >
               Blog
@@ -149,11 +149,23 @@ query {
   }
 
   #logo {
-    background-color: #04009d;
+    background-color: #000;
   }
 
   #logo:hover {
-    background-color: #fff;
+    transform: rotateY(1080deg);
+  }
+
+  .slider::after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px #000;
+    transform: scaleX(0);
+    transition: transform 100ms ease-in-out;
+  }
+
+  .slider:hover::after {
+    transform: scaleX(1);
   }
 
   /* body {
