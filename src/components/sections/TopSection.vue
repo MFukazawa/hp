@@ -1,34 +1,36 @@
 <template>
   <base-container>
     <main>
-      <section class="contents">
-        <flip-card>
-          <template v-slot:front>
-            <h1 class="title">Micah</h1>
-          </template>
-          <template v-slot:back>
-            <h1 class="title">マイカ</h1>
-          </template>
-        </flip-card>
-        <flip-card>
-          <template v-slot:front>
-            <h1 class="title">Fukazawa</h1>
-          </template>
-          <template v-slot:back>
-            <h1 class="title">深澤</h1>
-          </template>
-        </flip-card>
-        <flip-card>
-          <template v-slot:front>
-            <h2 class="subtitle">Frontend Developer</h2>
-          </template>
-          <template v-slot:back>
-            <h2 class="subtitle">
-              フロントエンドディベロッパー
-            </h2>
-          </template>
-        </flip-card>
-        <ul class="text-lg text-center mb-6">
+      <section class="contents top">
+        <div class="top-inner">
+          <flip-card>
+            <template v-slot:front>
+              <h1 class="title">Micah</h1>
+            </template>
+            <template v-slot:back>
+              <h1 class="title">マイカ</h1>
+            </template>
+          </flip-card>
+          <flip-card>
+            <template v-slot:front>
+              <h1 class="title">Fukazawa</h1>
+            </template>
+            <template v-slot:back>
+              <h1 class="title">深澤</h1>
+            </template>
+          </flip-card>
+          <flip-card class="mt-4">
+            <template v-slot:front>
+              <h2 class="subtitle">Frontend Developer</h2>
+            </template>
+            <template v-slot:back>
+              <h2 class="subtitle">
+                フロントエンドディベロッパー
+              </h2>
+            </template>
+          </flip-card>
+        </div>
+        <ul class="text-lg text-center mt-20 text-gray-100">
           <li>Cross-culture 🇺🇸🇯🇵</li>
           <li>
             Remote Work 🏡
@@ -53,6 +55,13 @@ export default {
 </script>
 
 <style scoped>
+.top {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .title {
   @apply text-6xl cursor-default font-extrabold;
 }

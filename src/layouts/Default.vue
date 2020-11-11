@@ -1,5 +1,5 @@
 <template>
-  <div class="antialiased leading-normal flex flex-col min-h-screen">
+  <div class="hero antialiased leading-normal flex flex-col min-h-screen">
     <header class="w-full fixed">
       <nav class="p-4 mx-auto flex flex-wrap justify-between items-center">
         <div>
@@ -88,6 +88,9 @@
           </li>
         </ul>
         <div class="text-center text-xs">Copyright Micah Fukazawa © 2020</div>
+        <div class="text-center pt-2 unsplash">
+          <span>Photo by <a href="https://unsplash.com/@kahika?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kahika</a> on <a href="https://unsplash.com/s/photos/black-and-white-japan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+        </div>
       </div>
     </footer>
   </div>
@@ -148,6 +151,12 @@ query {
     }
   }
 
+  .hero {
+    background-image: url('../assets/kahika-Q6jxxKOmL4s-unsplash.jpg');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+  }
+
   #logo {
     background-color: #000;
   }
@@ -168,163 +177,8 @@ query {
     transform: scaleX(1);
   }
 
-  /* body {
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    margin:0;
-    padding:0;
-    line-height: 1;
-    font-size: 1.6rem
+  .unsplash {
+    font-size: 10px;
   }
 
-  a {
-    background-color: transparent;
-    text-decoration: none;
-    color: inherit;
-    outline: none;
-      -webkit-tap-highlight-color: transparent;
-    cursor: pointer;
-  }
-
-  .layout {
-    margin: 0 auto;
-    color: #5d5d5d;
-  }
-
-  .nav {
-    position: relative;
-    padding: 1em 0;
-    align-items: center;
-    z-index: 10;
-  }
-
-  .container {
-    display: flex;
-    flex-flow: row wrap;
-    width: 90%;
-    align-items: center;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .nav__logo {
-    flex: 1 1 0;
-    align-self: flex-start;
-    height: 120px;
-  }
-
-  .nav__logo img {
-    max-width: 150px;
-    transition: all .2s ease-in-out;
-  }
-
-  .nav__logo-link {
-    margin-top: 10px;
-    width: 150px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-  }
-
-  .nav__logo-link img:hover {
-    transform: translateY(-3px);
-    opacity: .9;
-  }
-
-  .nav__list {
-    flex: 1 1 0;
-    margin: 0;
-    padding: 0;
-    text-align: right;
-    height: 110px;
-    padding-top: 10px;
-  }
-
-  .nav__list-item {
-    text-decoration: none;
-    display: inline-block;
-    padding: .3em 1em;
-    letter-spacing: .5px;
-    font-size: .8em;
-    transition: color .25s ease;
-  }
-
-  .nav__list-item:hover {
-    color: cornflowerblue;
-  }
-
-  .footer {
-    padding: 4em 0 6em;
-  }
-
-  .footer__header {
-    display: -ms-flexbox;
-    display: flex;
-    flex: 1 1 100%;
-      -ms-flex: 1 1 100%;
-    margin-bottom: .5em;
-    letter-spacing: -1px;
-    font-size: 2rem;
-    font-weight: 400;
-  }
-
-  .footer__link {
-    display: block;
-    padding: 15px 0;
-    font-size: 2rem;
-    font-weight: 300;
-    color: cornflowerblue;
-    transition: color .25s ease;
-  }
-
-  .footer__link:hover {
-    color: #5d5d5d;
-  }
-
-  .social-list {
-    margin: 0;
-    padding: 0;
-    font-size: 1.3rem;
-  }
-
-  .social-list__item {
-    display: block;
-    margin: 2em 0;
-    list-style: none;
-    transition: color .25s ease;
-    cursor: pointer;
-  }
-
-  .social-list__item:hover {
-    color: cornflowerblue;
-  }
-
-  @media screen and (min-width: 768px) {
-    .nav__list {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      padding-top: 0;
-    }
-
-    .footer__header {
-      flex: 0 0 auto;
-      margin-bottom: 0;
-      margin-block-start: 0;
-      font-size: 3rem;
-    }
-
-    .footer__link {
-      display: inline-block;
-      padding: 0;
-      font-size: 3rem;
-      margin-left: 15px;
-      font-weight: 500;
-    }
-
-    .social-list__item {
-      display: inline-block;
-      margin: 40px 40px 0 0;
-    }
-  } */
 </style>
