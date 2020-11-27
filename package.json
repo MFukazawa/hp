@@ -11,7 +11,8 @@
     "@gridsome/source-contentful": "^0.5.3",
     "gridsome": "^0.7.21",
     "markdown-it": "^11.0.1",
-    "typeface-cooper-hewitt": "0.0.44"
+    "typeface-cooper-hewitt": "0.0.44",
+    "vue-scroll-reveal": "^1.0.11"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",

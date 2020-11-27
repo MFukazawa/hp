@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="h-screen">
+  <section id="about" class="h-screen" v-scroll-reveal.reset="{ delay: 250 }">
     <base-container>
       <div class="contents leading-loose">
         <h2 class="text-5xl font-bold my-8">About</h2>

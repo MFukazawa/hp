@@ -7,6 +7,7 @@ import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { faGithub, faTwitter, faLinkedin, faGitlab } from '@fortawesome/free-brands-svg-icons'
 import { faTerminal } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import VueScrollReveal from 'vue-scroll-reveal';
 import '~/assets/CSS/style.css'
 require('typeface-cooper-hewitt')
 
@@ -17,4 +18,5 @@ export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.component('font-awesome', FontAwesomeIcon)
+  Vue.use(VueScrollReveal);
 }
