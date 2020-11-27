@@ -122,6 +122,7 @@ query {
     /* font-family: 'Lunch DS'; */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+    scroll-behavior: smooth;
   }
 
   .container {
@@ -150,10 +151,18 @@ query {
     }
   }
 
-  .hero {
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
     background-image: url('../assets/kahika-Q6jxxKOmL4s-unsplash.jpg');
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
+    filter: contrast(0.7);
   }
 
   #logo {

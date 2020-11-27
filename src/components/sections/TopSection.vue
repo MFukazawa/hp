@@ -21,16 +21,16 @@
           </flip-card>
           <flip-card class="mt-10">
             <template v-slot:front>
-              <h2 class="subtitle">Frontend Developer</h2>
+              <h2 class="subtitle subtitle-black">Frontend Developer</h2>
             </template>
             <template v-slot:back>
-              <h2 class="subtitle">
+              <h2 class="subtitle subtitle-black">
                 フロントエンドディベロッパー
               </h2>
             </template>
           </flip-card>
         </div>
-        <ul class="text-lg text-center mt-20 text-gray-100">
+        <ul class="text-lg text-center mt-20 md:mb-12 text-gray-100">
           <li>Cross-culture 🇺🇸🇯🇵</li>
           <li>
             Remote Work 🏡
@@ -68,5 +68,15 @@ export default {
 
 .subtitle {
   @apply text-3xl cursor-default font-extrabold text-gray-100;
+}
+
+.subtitle-black {
+  @apply text-gray-800;
+}
+
+@screen sm {
+  .subtitle-black {
+    @apply text-gray-100;
+  }
 }
 </style>
