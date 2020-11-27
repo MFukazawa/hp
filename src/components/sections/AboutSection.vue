@@ -1,9 +1,9 @@
 <template>
-  <section id="about" class="h-screen" v-scroll-reveal.reset="{ delay: 250 }">
+  <section id="about" class="h-screen" v-scroll-reveal.reset="{ delay: 300, distance: '50px', origin: 'left' }">
     <base-container>
       <div class="contents leading-loose">
         <h2 class="text-5xl font-bold my-8">About</h2>
-        <p class="text-xl ">
+        <p class="text-xl">
           Hi, I'm Micah. I work remotely as a Frontend Developer at Nomadori in
           Miyazaki, Japan. I speak English and Japanese. I've built
           <a

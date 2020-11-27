@@ -14,7 +14,7 @@
 <style scoped>
 .flip {
   background-color: transparent;
-  perspective: 1000px;
+  perspective: 5.5cm;
 }
 
 .flip-inner {
