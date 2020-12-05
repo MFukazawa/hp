@@ -8,6 +8,12 @@
       </a>
       <ul class="flex items-center mt-8 lg:mt-0">
         <li class="mr-8 mb-6 lg:mb-0">
+
+        <g-link class="slider" to="/">
+          Home
+        </g-link>
+        </li>
+        <li class="mr-8 mb-6 lg:mb-0">
           <a href="#about" class="slider">About</a>
         </li>
         <li class="mr-8 mb-6 lg:mb-0">
@@ -16,9 +22,7 @@
           </a>
         </li>
         <li class="mr-8 mb-6 lg:mb-0">
-          <g-link class="slider" to="/blog">
-            Blog
-          </g-link>
+          <a href="#blog" class="slider">Blog</a>
         </li>
       </ul>
     </nav>

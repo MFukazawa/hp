@@ -1,8 +1,10 @@
 <template>
   <Layout>
-    <!-- <g-image class="hero-image" :src="$page.post.heroImage.file.url" /> -->
-    <h1>{{$page.post.title}}</h1>
-    <div v-html="body" />
+    <div class="contents blog-top">
+      <!-- <g-image class="hero-image" :src="$page.post.heroImage.file.url" /> -->
+      <h1>{{$page.post.title}}</h1>
+      <div v-html="body" />
+    </div>
   </Layout>
 </template>
 
@@ -16,9 +18,13 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
+  import Layout from '~/layouts/Blog.vue'
   import MarkdownIt from "markdown-it";
 
   export default {
+    components: {
+      Layout
+    },
     computed: {
       body() {
         const md = new MarkdownIt();
@@ -32,5 +38,12 @@ query Post ($path: String!) {
 <style scoped>
   .hero-image {
     width: 100%;
+  }
+
+  .blog-top {
+    padding: 150px 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 </style>
