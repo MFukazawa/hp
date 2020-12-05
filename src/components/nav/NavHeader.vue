@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full fixed">
+  <header class="fixed w-screen">
     <nav class="p-4 mx-auto flex flex-wrap justify-between items-center">
       <a href="/">
         <div id="logo">
@@ -34,6 +34,12 @@
 </script>
 
 <style scoped>
+header {
+  top: 0;
+  transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+}
+
 #logo {
   @apply h-16 w-16 rounded font-bold flex items-center justify-center tracking-wide transition ease-in-out duration-1000 z-50;
 

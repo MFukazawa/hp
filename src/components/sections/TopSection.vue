@@ -1,5 +1,5 @@
 <template>
-  <main class="top pt-20">
+  <main class="top pt-32">
     <!-- <base-container> -->
       <div class="top-inner">
         <flip-card
@@ -49,7 +49,7 @@
         </flip-card>
       </div>
       <ul
-        class="text-lg text-center pt-20 md:pb-12 text-gray-100"
+        class="text-lg text-center py-20 md:pb-12 text-gray-100"
         v-scroll-reveal.reset="{
           delay: 500,
           distance: '50px',
