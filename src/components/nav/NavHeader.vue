@@ -36,7 +36,7 @@
 <style scoped>
 header {
   top: 0;
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
 }
 
