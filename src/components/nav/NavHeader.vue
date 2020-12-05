@@ -1,13 +1,11 @@
 <template>
   <header class="w-full fixed">
     <nav class="p-4 mx-auto flex flex-wrap justify-between items-center">
-      <div>
-        <a href="/">
-          <div id="logo">
-            MSF
-          </div>
-        </a>
-      </div>
+      <a href="/">
+        <div id="logo">
+          MSF
+        </div>
+      </a>
       <ul class="flex items-center mt-8 lg:mt-0">
         <li class="mr-8 mb-6 lg:mb-0">
           <a href="#about" class="slider">About</a>
@@ -35,3 +33,16 @@
 <script>
   export default {};
 </script>
+
+<style scoped>
+#logo {
+  @apply h-16 w-16 rounded font-bold flex items-center justify-center tracking-wide transition ease-in-out duration-1000 z-50;
+
+  color: goldenrod;
+  background-color: #000;
+}
+
+#logo:hover {
+  transform: rotateY(1080deg);
+}
+</style>

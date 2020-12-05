@@ -1,7 +1,7 @@
 <template>
-  <section id="about" class="h-screen" v-scroll-reveal.reset="{ delay: 300, distance: '50px', origin: 'left' }">
+  <section id="about" class="h-screen">
     <base-container>
-      <div class="contents leading-loose">
+      <div class="contents leading-loose" v-scroll-reveal.reset="{ delay: 300, distance: '50px', origin: 'left' }">
         <h2 class="text-5xl font-bold my-8">About</h2>
         <p class="text-xl">
           Hi, I'm Micah. I work remotely as a Frontend Developer at Nomadori in
