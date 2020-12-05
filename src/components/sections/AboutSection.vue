@@ -21,25 +21,11 @@
 
         <ul class="text-xl mt-5">
           <label>Some of my favorite tools:</label>
-          <li class="list-inside pl-4">
-            <span class="text-sm mr-4"
-              ><font-awesome :icon="['fas', 'terminal']" /></span
-            >Nuxt.js
-          </li>
-          <li class="list-inside pl-4">
-            <span class="text-sm mr-4"
-              ><font-awesome :icon="['fas', 'terminal']" /></span
-            >Vue.js
-          </li>
-          <li class="list-inside pl-4">
-            <span class="text-sm mr-4"
-              ><font-awesome :icon="['fas', 'terminal']" /></span
-            >ES6
-          </li>
-          <li class="list-inside pl-4">
-            <span class="text-sm mr-4"
-              ><font-awesome :icon="['fas', 'terminal']" /></span
-            >TailwindCSS
+          <li v-for="(tool, index) in tools" :key="index" class="list-inside pl-4">
+            <span class="text-sm mr-4">
+              <font-awesome :icon="['fas', 'terminal']" />
+            </span>
+            {{ tool }}
           </li>
         </ul>
       </div>
@@ -54,5 +40,15 @@
     components: {
       BaseContainer,
     },
+    data() {
+      return {
+        tools: [
+          'Nuxt.js (Vue.js)',
+          'TailwindCSS',
+          'VSCode',
+          'ES6 JavaScript'
+        ]
+      }
+    }
   };
 </script>
