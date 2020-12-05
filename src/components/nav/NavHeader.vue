@@ -11,14 +11,9 @@
           <a href="#about" class="slider">About</a>
         </li>
         <li class="mr-8 mb-6 lg:mb-0">
-          <g-link class="slider" to="/work">
-            Work
-          </g-link>
-        </li>
-        <li class="mr-8 mb-6 lg:mb-0">
-          <g-link class="slider" to="/contact">
+          <a href="https://forms.gle/EQxHCGsdg9buMBm26" target="_blank" class="slider">
             Contact
-          </g-link>
+          </a>
         </li>
         <li class="mr-8 mb-6 lg:mb-0">
           <g-link class="slider" to="/blog">
