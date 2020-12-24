@@ -41,13 +41,27 @@ header {
 }
 
 #logo {
-  @apply h-16 w-16 rounded font-bold flex items-center justify-center tracking-wide transition ease-in-out duration-1000 z-50;
+  @apply h-16 w-16 rounded font-bold flex items-center justify-center tracking-wide transition ease-in-out duration-150 z-50;
 
   color: goldenrod;
+  position: relative;
   background-color: #000;
 }
 
+#logo::before {
+  content: '';
+  bottom: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  filter: blur(6px);
+  height: 94%;
+  left: 3%;
+  position: absolute;
+  width: 94%;
+  z-index: -1;
+}
+
 #logo:hover {
-  transform: rotateY(1080deg);
+  transform: translateY(-5px);
+  box-shadow: 10px 5px 5px slategray;
 }
 </style>
