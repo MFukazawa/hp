@@ -1,16 +1,16 @@
 <template>
   <header class="fixed w-screen">
     <nav class="p-4 mx-auto flex flex-wrap justify-between items-center">
-      <a href="/">
-        <div id="logo">
-          MSF
-        </div>
-      </a>
+      <div id="logo" class="cursor-pointer" @click="scrollToTop()">
+        MSF
+      </div>
       <ul class="flex items-center mt-8 lg:mt-0">
         <li class="mr-8 mb-6 lg:mb-0">
 
-        <g-link class="slider" to="/">
+        <g-link class="slider" to="/" @click.native="scrollToTop()">
+        <!-- <a href="/" class="slider"> -->
           Home
+        <!-- </a> -->
         </g-link>
         </li>
         <li class="mr-8 mb-6 lg:mb-0">
@@ -30,7 +30,13 @@
 </template>
 
 <script>
-  export default {};
+  export default {
+    methods: {
+      scrollToTop() {
+        window.scrollTo(0,0)
+      }
+    }
+  };
 </script>
 
 <style scoped>
