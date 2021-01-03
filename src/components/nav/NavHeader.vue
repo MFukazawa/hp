@@ -7,15 +7,15 @@
       <ul class="flex items-center mt-8 lg:mt-0">
         <li class="mr-8 mb-6 lg:mb-0">
 
-        <g-link class="slider" to="/" @click.native="scrollToTop()">
+        <g-link class="slider blur" to="/" @click.native="scrollToTop()">
           Home
         </g-link>
         </li>
         <li class="mr-8 mb-6 lg:mb-0">
-          <a href="#about" class="slider">About</a>
+          <a href="#about" class="slider blur">About</a>
         </li>
         <li class="mr-8 mb-6 lg:mb-0">
-          <a href="https://forms.gle/EQxHCGsdg9buMBm26" target="_blank" class="slider">
+          <a href="https://forms.gle/EQxHCGsdg9buMBm26" target="_blank" class="slider blur">
             Contact
           </a>
         </li>

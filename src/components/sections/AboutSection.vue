@@ -7,13 +7,13 @@
           Hi, I'm Micah. I work remotely as a Frontend Developer at Nomadori in
           Miyazaki, Japan. I speak English and Japanese. I've built
           <a
-            class="text-yellow-600 underline hover:text-yellow-800"
+            class="text-yellow-600 blur"
             href="https://www.miyazakijazz.org"
             >Miyazaki Jazz Organization</a
           >
           and
           <a
-            class="text-yellow-600 underline hover:text-yellow-800"
+            class="text-yellow-600 blur"
             href="https://www.nomadori.com"
             >Nomadori</a
           >, along with a number of private projects.

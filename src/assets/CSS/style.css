@@ -43,6 +43,7 @@ body {
   border-bottom: solid 2px #000;
   transform: scaleX(0);
   transition: transform 100ms ease-in-out;
+  filter: blur(1px);
 }
 
 .slider:hover::after {
@@ -51,4 +52,8 @@ body {
 
 .unsplash {
   font-size: 10px;
+}
+
+.blur:hover {
+  filter: blur(1px);
 }
