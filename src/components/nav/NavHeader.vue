@@ -8,9 +8,7 @@
         <li class="mr-8 mb-6 lg:mb-0">
 
         <g-link class="slider" to="/" @click.native="scrollToTop()">
-        <!-- <a href="/" class="slider"> -->
           Home
-        <!-- </a> -->
         </g-link>
         </li>
         <li class="mr-8 mb-6 lg:mb-0">
@@ -21,9 +19,9 @@
             Contact
           </a>
         </li>
-        <li class="mr-8 mb-6 lg:mb-0">
+        <!-- <li class="mr-8 mb-6 lg:mb-0">
           <a href="#blog" class="slider">Blog</a>
-        </li>
+        </li> -->
       </ul>
     </nav>
   </header>

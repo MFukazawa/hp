@@ -2,7 +2,7 @@
   <Layout>
     <top-section />
     <about-section />
-    <blog-section />
+    <!-- <blog-section /> -->
   </Layout>
 </template>
 

@@ -47,7 +47,7 @@
       </flip-card>
     </div>
     <ul
-      class="text-lg text-center py-20 md:pb-12 text-gray-100"
+      class="text-lg text-center my-20 md:mb-12 text-gray-100 pointer-events-none"
       v-scroll-reveal.reset="{
         delay: 500,
         distance: '50px',

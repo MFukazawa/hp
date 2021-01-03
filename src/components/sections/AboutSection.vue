@@ -43,10 +43,12 @@
     data() {
       return {
         tools: [
-          'Nuxt.js (Vue.js)',
+          'JavaScript (vanilla, Vue.js, etc.)',
+          'Nuxt.js',
           'TailwindCSS',
-          'VSCode',
-          'ES6 JavaScript'
+          'Netlify',
+          'Github',
+          'VSCode'
         ]
       }
     }
