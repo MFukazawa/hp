@@ -7,7 +7,7 @@ import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { faGithub, faTwitter, faLinkedin, faGitlab } from '@fortawesome/free-brands-svg-icons'
 import { faTerminal } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import VueScrollReveal from 'vue-scroll-reveal';
+import VueScrollReveal from 'gridsome-scroll-reveal';
 import '~/assets/CSS/style.css'
 require('typeface-cooper-hewitt')
 
