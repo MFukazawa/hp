@@ -9,7 +9,7 @@
 <script>
   import TopSection from '~/components/sections/TopSection';
   import AboutSection from '~/components/sections/AboutSection';
-  import BlogSection from '~/components/sections/BlogSection';
+  // import BlogSection from '~/components/sections/BlogSection';
 
   export default {
     metaInfo: {
@@ -19,21 +19,22 @@
     components: {
       TopSection,
       AboutSection,
-      BlogSection
+      // BlogSection
     },
   };
-</script>
 
-<page-query>
-query Posts {
-  posts: allContentfulBlogPost {
-    edges {
-      node {
-        id,
-        title,
-        path
-      }
-    }
-  }
-}
-</page-query>
+  // this goes below the script tag
+  //   <page-query>
+  // query Posts {
+  //   posts: allContentfulBlogPost {
+  //     edges {
+  //       node {
+  //         id,
+  //         title,
+  //         path
+  //       }
+  //     }
+  //   }
+  // }
+  // </page-query>
+</script>
