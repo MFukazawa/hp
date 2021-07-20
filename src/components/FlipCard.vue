@@ -39,6 +39,7 @@
   justify-content: center;
   align-items: center;
   backface-visibility: hidden;
+  transform: rotateX(0deg);
 }
 
 .flip-back {
