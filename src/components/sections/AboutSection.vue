@@ -4,17 +4,19 @@
       <div class="contents leading-loose" v-scroll-reveal.reset="{ delay: 300, distance: '50px', origin: 'left' }">
         <h2 class="text-5xl font-bold my-8">About</h2>
         <p class="text-xl">
-          Hi, I'm Micah. I work remotely as a Frontend Developer at Nomadori in
+          Hi, I'm Micah. I work remotely as a Frontend Developer at <a href="https://www.zeals.co.jp" class="text-yellow-600 blur" target="_blank">Zeals</a> from
           Miyazaki, Japan. I speak English and Japanese. I've built
           <a
             class="text-yellow-600 blur"
             href="https://www.miyazakijazz.org"
+            target="_blank"
             >Miyazaki Jazz Organization</a
           >
           and
           <a
             class="text-yellow-600 blur"
             href="https://www.nomadori.com"
+            target="_blank"
             >Nomadori</a
           >, along with a number of private projects.
         </p>
