@@ -1,5 +1,5 @@
 <template>
-  <div class="container w-full mx-auto pt-20 md:mt-8 mb-16">
+  <div class="container w-full mx-auto pt-12 md:pt-20 md:mt-8 mb-16">
     <div class="w-full px-4 md:px-0 text-gray-800 leading-normal">
       <slot></slot>
     </div>

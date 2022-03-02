@@ -20,3 +20,6 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('font-awesome', FontAwesomeIcon)
   Vue.use(VueScrollReveal);
 }
+
+
+

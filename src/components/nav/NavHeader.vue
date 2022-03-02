@@ -41,6 +41,7 @@
 header {
   top: 0;
   transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 

@@ -1,6 +1,5 @@
 <template>
-  <main class="top pt-32">
-    <!-- <base-container> -->
+  <main class="top">
     <div class="w-2/3 lg:w-1/2 mx-auto">
       <flip-card
         v-scroll-reveal.reset="{
@@ -47,7 +46,7 @@
       </flip-card>
     </div>
     <ul
-      class="text-lg text-center my-20 md:mb-12 text-gray-100 pointer-events-none"
+      class="text-lg text-center md:mb-12 text-gray-100 pointer-events-none facts"
       v-scroll-reveal.reset="{
         delay: 500,
         distance: '50px',
@@ -58,25 +57,44 @@
       <li>Remote Work 🏡</li>
       <li>Dad life 👨‍👩‍👦‍👦</li>
     </ul>
-    <!-- </base-container> -->
   </main>
 </template>
 
 <script>
-  // import BaseContainer from '~/components/containers/BaseContainer';
   import FlipCard from '~/components/FlipCard';
 
   export default {
     components: {
-      // BaseContainer,
       FlipCard,
     },
   };
 </script>
 
 <style scoped>
+  .top::after {
+    content: '';
+    position: absolute;
+    inset: 0 auto;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url('../../assets/kahika-Q6jxxKOmL4s-unsplash.jpg');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    filter: contrast(0.7);
+  }
+
   .top {
-    @apply h-screen flex flex-col justify-between overflow-hidden;
+    height: 100vh;
+    padding-top: 7rem;
+    @apply flex flex-col justify-between overflow-hidden;
+  }
+
+  @supports (-webkit-overflow-scrolling: touch) {
+    /* CSS specific to iOS devices only */
+    .top {
+      height: -webkit-fill-available;
+    }
   }
 
   .title {
@@ -89,6 +107,10 @@
 
   .subtitle-black {
     @apply text-gray-800;
+  }
+
+  .facts {
+    padding-bottom: 2rem;
   }
 
   @screen sm {
